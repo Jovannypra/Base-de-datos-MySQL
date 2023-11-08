@@ -1,0 +1,36 @@
+.contenedor {
+    text-align: center;
+}
+
+.contenedor_pre {
+    margin-left: 25px;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+.comentario {
+    color: dodgerblue;
+}
+
+.create {
+    color: lightseagreen;
+}
+
+.nombres {
+    color: rgb(165, 93, 52);
+}
+
+.info {
+    color: orange;
+}
+
+p {
+    color: orange;
+}
+
+.tabla {
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
