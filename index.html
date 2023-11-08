@@ -91,7 +91,7 @@
             <p>
                 <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`categorias`</span> (<span
                     class="nombres">`categoriaID`, `categoriaNombre`, `descripcion`</span>) <span class="create">VALUES
-                </span> (<span class="info">'5',cervezas', 'bebidas'</span>);
+                </span> (<span class="info">'5','cervezas', 'bebidas'</span>);
             </p>
             <p>
                 <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`categorias`</span> (<span
@@ -945,176 +945,7 @@
 
         <!--!   TABLA PROEVEEDORES -->
 
-        <div class="tabla"><span class="comentario">-- tabla proveedores</span></div>
-
-        <p><span class="create">CREATE TABLE</span> <span class="nombres">`base_prueba`.`proveedores`</span> (</p>
-        <p> <span class="nombres">`ID de proveedor`</span> <span class="create">INT NOT NULL AUTO_INCREMENT</span>,</p>
-        <p> <span class="nombres">`nombre del proveedor`</span> <span class="create">text</span> NULL,</p>
-        <p> <span class="nombres">`Nombre de contacto`</span> <span class="create">text</span> NULL,</p>
-        <p> <span class="nombres">`direccion`</span> <span class="create">text</span> NULL,</p>
-        <p><span class="nombres"> `ciudad`</span> <span class="create">text</span> NULL,</p>
-        <p> <span class="nombres">`codigo postal`</span> <span class="create">text</span> NULL,</p>
-        <p> <span class="nombres">`pais`</span> <span class="create">text</span> NULL,</p>
-        <p> <span class="nombres">`telefono`</span> <span class="create">text</span> NULL,</p>
-        <p> <span class="create">PRIMARY KEY</span> (<span class="nombres">`ID de proveedor`</span>));</p>
-
-        <div class="tabla"> <span class="comentario"> -- insertando base de datos a los proveedores</span></div>
-
-        <div class="tabla">
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(1,'Exotic Liquid','Charlotte Cooper','49 Gilbert St.','Londona' ,'EC1
-                4SD'
-                ,'UK' ,'(171) 555-2222');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(2,'New Orleans' , 'Cajun Delights' ,'Shelley Burke' ,'P.O. Box
-                78934','New
-                Orleans','USA' ,'(100) 555-4822');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(3,'Grandma Kelly''s Homestead','Regina Murphy','707 Oxford Rd.','Ann
-                Arbor','48104','USA','(313) 555-5735');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(4,'Tokyo Traders','Yoshi Nagase','9-8 Sekimai
-                Musashino-shi','Tokyo','100','Japan','(03) 3555-5011');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(5,'Cooperativa de Quesos ''Las Cabras''','Antonio del Valle
-                Saavedra','Calle del Rosal 4','Oviedo','33007','Spain','(98) 598 76 54');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(6,'Mayumi''s','Mayumi Ohno','92 Setsuko
-                Chuo-ku','Osaka','545','Japón','(06) 431-7877');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(7,'Pavlova, Ltd.' ,'Ian Devling','74 Rose St. Moonie
-                Ponds','Melbourne'
-                ,'3058' ,'Australia','(03) 444-2343');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(8,'Specialty Biscuits','Ltd.' ,'Peter Wilson' ,'29 Kings
-                Way','Manchester','M14 GSD' ,'(161) 555-4448' );
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(9,'PB Knäckebröd AB','Lars Peterson','Kaloadagatan
-                13','Göteborg','S-345
-                67','Sweden','031-987 65 43');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(10,'Refrescos Americanas LTDA','Carlos Diaz','Av. das Americanas
-                12.890','São Paulo','5442','Brasil','(11) 555 4640');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(11,'Heli Süßwaren GmbH & Co. KG','Petra Winkler','Tiergartenstraße
-                5','Berlin','10785','Alemania','(010) 9984510');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(12,'Plutzer Lebensmittelgroßmärkte AG','Martin Bein','Bogenallee
-                51','Frankfurt','60439','Alemania','(069) 992755');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(13,'Nord-Ost-Fisch Handelsgesellschaft mbH','Sven
-                Petersen','Frahmredder
-                112a','Cuxhaven','27478','Alemania','(04721) 8713');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(14,'Formaggi Fortini s.r.l.','Elio Rossi','Viale Dante,
-                75','Ravenna','48100','Italia','(0544) 60323');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(15,'Norske Meierier','Beate Vileid','Hatlevegen
-                5','Sandvika','1320','Noruega','(0)2-953010');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(16,'Bigfoot Breweries','Cheryl Saylor','3400 - 8th Avenue Suite
-                210','Bend' ,'97101' ,'USA','(503) 555-9931');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(17,'Svensk Sjöföda AB','Michael Björn','Brovallavägen 231'
-                ,'Estocolmo','S-123 45','Suecia','08-123 45 67');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(18,'Aux joyeux ecclésiastiques','Guylène Nodier','203, Rue des
-                Francs-Bourgeois','Paris','75004','France','(1) 03.83.00.68');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(19,'New England Seafood Cannery','Robb Merchant','Order Processing
-                Dept.
-                2100 Paul Revere Blvd.','Boston','2134','USA','(617) 555-3267 ');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(20,'Leka Trading','Chandra Leka','471 Serangoon Loop, Suite
-                #402','Singapur','512','Singapur','555-8787');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(21,'Lyngbysild','Niels Petersen','Lyngbysild Fiskebakken
-                10','Lyngby','2800','Dinamarca','43844108');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(22,'Zaanse Snoepfabriek','Dirk Luchte','Verkoop Rijnweg
-                22','Zaandam','9999 ZZ','Países Bajos','(12345) 1212');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(23,'Karkki Oy','Anne Heikkonen','Valtakatu
-                12','Lappeenranta','53120','Finlandia','(953) 10956');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(24,'G''day, Mate','Wendy Mackenzie','170 Prince Edward Parade
-                Hunter''s
-                Hill','Sydney','2042','Australia','(02) 555 -5914');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(25,'Ma Maison','Jean-Guy Lauzon','2960 Rue St.
-                Laurent','Montréal','H1J
-                1C3','Canada','(514) 555-9022');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(26,'Pasta Buttini s.r.l.','Giovanni Giudici','Via dei Gelsomini,
-                153','Salerno','84100','Italia','(089) 6547665');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(27,'Escargots Nouveaux','Marie Delamare','22, rue H.
-                Voiron','Montceau','71300','France','85.57.00.07');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(28,'Gai pâturage','Eliane Noz','Bat. B 3, rue des
-                Alpes','Annecy','74000','France','38.76.98.06');
-            </p>
-            <p>
-                <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`proveedores`</span> <span
-                    class="create">VALUES </span>(29,'Forêts d''érables','Chantal Goulet','148 rue
-                Chasseur','Ste-HyacINThe','J2S 7S8','Canada','(514) 555-2955') ;
-            </p>
-        </div>
+        
 
         <!--!      TABLA PRODUCTOS -->
 
@@ -2778,1198 +2609,1690 @@
         </p>
 
 
-<!--! continuar -->
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(123,10293,75,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(124,10294,1,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(125,10294,17,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(126,10294,43,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(127,10294,60,21);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(128,10294,75,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(129,10295,56,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(130,10296,11,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(131,10296,16,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(132,10296,69,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(133,10297,39,60);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(134,10297,72,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(135,10298,2,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(136,10298,36,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(137,10298,59,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(138,10298,62,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(139,10299,19,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(140,10299,70,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(141,10300,66,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(142,10300,68,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(143,10301,40,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(144,10301,56,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(145,10302,17,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(146,10302,28,28);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(147,10302,43,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(148,10303,40,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(149,10303,65,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(150,10303,68,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(151,10304,49,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(152,10304,59,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(153,10304,71,2);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(154,10305,18,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(155,10305,29,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(156,10305,39,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(157,10306,30,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(158,10306,53,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(159,10306,54,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(160,10307,62,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(161,10307,68,3);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(162,10308,69,1);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(163,10308,70,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(164,10309,4,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(165,10309,6,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(166,10309,42,2);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(167,10309,43,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(168,10309,71,3);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(169,10310,16,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(170,10310,62,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(171,10311,42,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(172,10311,69,7);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(173,10312,28,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(174,10312,43,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(175,10312,53,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(176,10312,75,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(177,10313,36,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(178,10314,32,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(179,10314,58,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(180,10314,62,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(181,10315,34,14);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(182,10315,70,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(183,10316,41,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(184,10316,62,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(185,10317,1,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(186,10318,41,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(187,10318,76,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(188,10319,17,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(189,10319,28,14);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(190,10319,76,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(191,10320,71,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(192,10321,35,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(193,10322,52,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(194,10323,15,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(195,10323,25,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(196,10323,39,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(197,10324,16,21);
+        </p>
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(198,10324,35,70);
+        </p>
 
 
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(199,10324,46,30);
+        </p>
 
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(123,10293,75,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(124,10294,1,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(125,10294,17,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(126,10294,43,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(127,10294,60,21);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(128,10294,75,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(129,10295,56,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(130,10296,11,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(131,10296,16,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(132,10296,69,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(133,10297,39,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(134,10297,72,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(135,10298,2,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(136,10298,36,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(137,10298,59,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(138,10298,62,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(139,10299,19,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(140,10299,70,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(141,10300,66,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(142,10300,68,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(143,10301,40,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(144,10301,56,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(145,10302,17,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(146,10302,28,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(147,10302,43,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(148,10303,40,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(149,10303,65,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(150,10303,68,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(151,10304,49,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(152,10304,59,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(153,10304,71,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(154,10305,18,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(155,10305,29,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(156,10305,39,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(157,10306,30,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(158,10306,53,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(159,10306,54,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(160,10307,62,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(161,10307,68,3);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(162,10308,69,1);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(163,10308,70,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(164,10309,4,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(165,10309,6,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(166,10309,42,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(167,10309,43,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(168,10309,71,3);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(169,10310,16,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(170,10310,62,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(171,10311,42,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(172,10311,69,7);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(173,10312,28,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(174,10312,43,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(175,10312,53,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(176,10312,75,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(177,10313,36,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(178,10314,32,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(179,10314,58,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(180,10314,62,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(181,10315,34,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(182,10315,70,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(183,10316,41,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(184,10316,62,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(185,10317,1,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(186,10318,41,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(187,10318,76,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(188,10319,17,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(189,10319,28,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(190,10319,76,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(191,10320,71,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(192,10321,35,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(193,10322,52,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(194,10323,15,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(195,10323,25,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(196,10323,39,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(197,10324,16,21);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(198,10324,35,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(199,10324,46,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(200,10324,59,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(201,10324,63,80);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(202,10325,6,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(203,10325,13,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(204,10325,14,9);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(205,10325,31,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(206,10325,72,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(207,10326,4,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(208,10326,57,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(209,10326,75,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(210,10327,2,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(211,10327,11,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(212,10327,30,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(213,10327,58,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(214,10328,59,9);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(215,10328,65,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(216,10328,68,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(217,10329,19,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(218,10329,30,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(219,10329,38,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(220,10329,56,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(221,10330,26,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(222,10330,72,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(223,10331,54,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(224,10332,18,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(225,10332,42,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(226,10332,47,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(227,10333,14,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(228,10333,21,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(229,10333,71,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(230,10334,52,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(231,10334,68,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(232,10335,2,7);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(233,10335,31,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(234,10335,32,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(235,10335,51,48);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(236,10336,4,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(237,10337,23,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(238,10337,26,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(239,10337,36,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(240,10337,37,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(241,10337,72,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(242,10338,17,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(243,10338,30,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(244,10339,4,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(245,10339,17,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(246,10339,62,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(247,10340,18,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(248,10340,41,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(249,10340,43,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(250,10341,33,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(251,10341,59,9);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(252,10342,2,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(253,10342,31,56);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(254,10342,36,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(255,10342,55,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(256,10343,64,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(257,10343,68,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(258,10343,76,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(259,10344,4,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(260,10344,8,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(261,10345,8,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(262,10345,19,80);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(263,10345,42,9);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(264,10346,17,36);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(265,10346,56,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(266,10347,25,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(267,10347,39,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(268,10347,40,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(269,10347,75,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(270,10348,1,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(271,10348,23,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(272,10349,54,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(273,10350,50,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(274,10350,69,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(275,10351,38,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(276,10351,41,13);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(277,10351,44,77);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(278,10351,65,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(279,10352,24,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(280,10352,54,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(281,10353,11,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(282,10353,38,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(283,10354,1,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(284,10354,29,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(285,10355,24,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(286,10355,57,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(287,10356,31,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(288,10356,55,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(289,10356,69,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(290,10357,10,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(291,10357,26,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(292,10357,60,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(293,10358,24,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(294,10358,34,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(295,10358,36,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(296,10359,16,56);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(297,10359,31,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(298,10359,60,80);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(299,10360,28,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(300,10360,29,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(301,10360,38,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(302,10360,49,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(303,10360,54,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(304,10361,39,54);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(305,10361,60,55);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(306,10362,25,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(307,10362,51,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(308,10362,54,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(309,10363,31,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(310,10363,75,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(311,10363,76,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(312,10364,69,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(313,10364,71,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(314,10365,11,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(315,10366,65,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(316,10366,77,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(317,10367,34,36);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(318,10367,54,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(319,10367,65,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(320,10367,77,7);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(321,10368,21,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(322,10368,28,13);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(323,10368,57,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(324,10368,64,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(325,10369,29,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(326,10369,56,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(327,10370,1,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(328,10370,64,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(329,10370,74,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(330,10371,36,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(331,10372,20,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(332,10372,38,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(333,10372,60,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(334,10372,72,42);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(335,10373,58,80);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(336,10373,71,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(337,10374,31,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(338,10374,58,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(339,10375,14,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(340,10375,54,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(341,10376,31,42);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(342,10377,28,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(343,10377,39,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(344,10378,71,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(345,10379,41,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(346,10379,63,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(347,10379,65,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(348,10380,30,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(349,10380,53,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(350,10380,60,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(351,10380,70,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(352,10381,74,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(353,10382,5,32);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(354,10382,18,9);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(355,10382,29,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(356,10382,33,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(357,10382,74,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(358,10383,13,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(359,10383,50,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(360,10383,56,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(361,10384,20,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(362,10384,60,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(363,10385,7,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(364,10385,60,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(365,10385,68,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(366,10386,24,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(367,10386,34,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(368,10387,24,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(369,10387,28,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(370,10387,59,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(371,10387,71,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(372,10388,45,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(373,10388,52,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(374,10388,53,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(375,10389,10,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(376,10389,55,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(377,10389,62,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(378,10389,70,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(379,10390,31,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(380,10390,35,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(381,10390,46,45);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(382,10390,72,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(383,10391,13,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(384,10392,69,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(385,10393,2,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(386,10393,14,42);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(387,10393,25,7);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(388,10393,26,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(389,10393,31,32);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(390,10394,13,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(391,10394,62,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(392,10395,46,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(393,10395,53,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(394,10395,69,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(395,10396,23,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(396,10396,71,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(397,10396,72,21);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(398,10397,21,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(399,10397,51,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(400,10398,35,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(401,10398,55,120);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(402,10399,68,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(403,10399,71,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(404,10399,76,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(405,10399,77,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(406,10400,29,21);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(407,10400,35,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(408,10400,49,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(409,10401,30,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(410,10401,56,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(411,10401,65,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(412,10401,71,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(413,10402,23,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(414,10402,63,65);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(415,10403,16,21);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(416,10403,48,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(417,10404,26,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(418,10404,42,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(419,10404,49,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(420,10405,3,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(421,10406,1,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(422,10406,21,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(423,10406,28,42);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(424,10406,36,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(425,10406,40,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(426,10407,11,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(427,10407,69,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(428,10407,71,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(429,10408,37,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(430,10408,54,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(431,10408,62,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(432,10409,14,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(433,10409,21,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(434,10410,33,49);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(435,10410,59,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(436,10411,41,25);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(437,10411,44,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(438,10411,59,9);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(439,10412,14,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(440,10413,1,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(441,10413,62,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(442,10413,76,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(443,10414,19,18);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(444,10414,33,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(445,10415,17,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(446,10415,33,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(447,10416,19,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(448,10416,53,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(449,10416,57,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(450,10417,38,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(451,10417,46,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(452,10417,68,36);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(453,10417,77,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(454,10418,2,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(455,10418,47,55);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(456,10418,61,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(457,10418,74,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(458,10419,60,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(459,10419,69,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(460,10420,9,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(461,10420,13,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(462,10420,70,8);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(463,10420,73,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(464,10421,19,4);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(465,10421,26,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(466,10421,53,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(467,10421,77,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(468,10422,26,2);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(469,10423,31,14);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(470,10423,59,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(471,10424,35,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(472,10424,38,49);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(473,10424,68,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(474,10425,55,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(475,10425,76,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(476,10426,56,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(477,10426,64,7);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(478,10427,14,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(479,10428,46,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(480,10429,50,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(481,10429,63,35);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(482,10430,17,45);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(483,10430,21,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(484,10430,56,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(485,10430,59,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(486,10431,17,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(487,10431,40,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(488,10431,47,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(489,10432,26,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(490,10432,54,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(491,10433,56,28);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(492,10431,17,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(493,10430,59,70);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(494,10430,2,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(495,10420,22,12);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(496,10426,72,10);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(497,10426,46,5);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(498,10427,56,40);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(499,10428,64,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(500,10429,75,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(501,10430,53,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(502,10431,19,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(503,10432,34,20);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(504,10433,57,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(505,10421,12,15);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(506,10420,16,16);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(507,10421,64,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(508,10422,74,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(509,10423,2,45);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(510,10424,16,49);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(511,10424,29,24);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(512,10425,61,90);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(513,10428,27,50);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(514,10414,11,30);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(515,10410,54,80);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(516,10420,66,60);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(517,10408,11,6);
-        <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
-            class="create">VALUES
-        </span>(518,10409,28,12);
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(200,10324,59,40);
+        </p>
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(201,10324,63,80);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(202,10325,6,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(203,10325,13,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(204,10325,14,9);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(205,10325,31,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(206,10325,72,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(207,10326,4,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(208,10326,57,16);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(209,10326,75,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(210,10327,2,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(211,10327,11,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(212,10327,30,35);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(213,10327,58,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(214,10328,59,9);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(215,10328,65,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(216,10328,68,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(217,10329,19,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(218,10329,30,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(219,10329,38,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(220,10329,56,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(221,10330,26,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(222,10330,72,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(223,10331,54,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(224,10332,18,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(225,10332,42,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(226,10332,47,16);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(227,10333,14,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(228,10333,21,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(229,10333,71,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(230,10334,52,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(231,10334,68,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(232,10335,2,7);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(233,10335,31,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(234,10335,32,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(235,10335,51,48);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(236,10336,4,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(237,10337,23,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(238,10337,26,24);
+        </p>
+
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span>
+            <span class="create"> VALUES</span> (239,10337,36,20);
+        </p>
+
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(240,10337,37,28);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(241,10337,72,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(242,10338,17,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(243,10338,30,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(244,10339,4,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(245,10339,17,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(246,10339,62,28);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(247,10340,18,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(248,10340,41,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(249,10340,43,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(250,10341,33,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(251,10341,59,9);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(252,10342,2,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(253,10342,31,56);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(254,10342,36,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(255,10342,55,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(256,10343,64,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(257,10343,68,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(258,10343,76,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(259,10344,4,35);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(260,10344,8,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(261,10345,8,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(262,10345,19,80);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(263,10345,42,9);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(264,10346,17,36);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(265,10346,56,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(266,10347,25,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(267,10347,39,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(268,10347,40,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(269,10347,75,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(270,10348,1,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(271,10348,23,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(272,10349,54,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(273,10350,50,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(274,10350,69,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(275,10351,38,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(276,10351,41,13);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(277,10351,44,77);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(278,10351,65,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(279,10352,24,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(280,10352,54,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(281,10353,11,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(282,10353,38,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(283,10354,1,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(284,10354,29,4);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(285,10355,24,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(286,10355,57,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(287,10356,31,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(288,10356,55,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(289,10356,69,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(290,10357,10,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(291,10357,26,16);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(292,10357,60,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(293,10358,24,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(294,10358,34,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(295,10358,36,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(296,10359,16,56);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(297,10359,31,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(298,10359,60,80);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(299,10360,28,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(300,10360,29,35);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(301,10360,38,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(302,10360,49,35);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(303,10360,54,28);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(304,10361,39,54);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(305,10361,60,55);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(306,10362,25,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(307,10362,51,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(308,10362,54,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(309,10363,31,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(310,10363,75,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(311,10363,76,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(312,10364,69,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(313,10364,71,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(314,10365,11,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(315,10366,65,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(316,10366,77,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(317,10367,34,36);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(318,10367,54,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(319,10367,65,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(320,10367,77,7);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(321,10368,21,5);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(322,10368,28,13);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(323,10368,57,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(324,10368,64,35);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(325,10369,29,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(326,10369,56,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(327,10370,1,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(328,10370,64,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(329,10370,74,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(330,10371,36,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(331,10372,20,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(332,10372,38,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(333,10372,60,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(334,10372,72,42);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(335,10373,58,80);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(336,10373,71,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(337,10374,31,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(338,10374,58,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(339,10375,14,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(340,10375,54,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(341,10376,31,42);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(342,10377,28,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(343,10377,39,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(344,10378,71,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(345,10379,41,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(346,10379,63,16);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(347,10379,65,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(348,10380,30,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(349,10380,53,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(350,10380,60,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(351,10380,70,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(352,10381,74,14);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(353,10382,5,32);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(354,10382,18,9);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(355,10382,29,14);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(356,10382,33,60);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(357,10382,74,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(358,10383,13,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(359,10383,50,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(360,10383,56,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(361,10384,20,28);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(362,10384,60,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(363,10385,7,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(364,10385,60,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(365,10385,68,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(366,10386,24,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(367,10386,34,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(368,10387,24,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(369,10387,28,6);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(370,10387,59,12);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(371,10387,71,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES </span>(372,10388,45,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(373,10388,52,20);
+        </p>
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(374,10388,53,40);
+
+        </p>
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(375,10389,10,16);
+        </p>
+
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(376,10389,55,15);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(377,10389,62,20);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(378,10389,70,30);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(379,10390,31,60);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(380,10390,35,40);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(381,10390,46,45);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(382,10390,72,24);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(383,10391,13,18);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(384,10392,69,50);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(385,10393,2,25);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(386,10393,14,42);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(387,10393,25,7);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(388,10393,26,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(389,10393,31,32);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(390,10394,13,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(391,10394,62,10);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(392,10395,46,28);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(393,10395,53,70);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(394,10395,69,8);
+        </p>
+        <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(395,10396,23,40);
+        </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(396,10396,71,60);
+     </p>
+       <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(397,10396,72,21);
+       </p>
+       <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(398,10397,21,10);
+       </p>
+    <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(399,10397,51,18);
+    </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(400,10398,35,30);
+     </p>
+      <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(401,10398,55,120);
+      </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(402,10399,68,60);
+     </p>
+    <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(403,10399,71,30);
+    </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(404,10399,76,35);
+   </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(405,10399,77,14);
+   </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(406,10400,29,21);
+     </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(407,10400,35,35);
+   </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(408,10400,49,30);
+ </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(409,10401,30,18);
+  </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(410,10401,56,70);
+   </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(411,10401,65,20);
+     </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(412,10401,71,60);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(413,10402,23,60);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(414,10402,63,65);
+</p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(415,10403,16,21);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(416,10403,48,70);
+   </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(417,10404,26,30);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(418,10404,42,40);
+   </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(419,10404,49,30);
+  </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(420,10405,3,50);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(421,10406,1,10);
+   </p>
+    <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(422,10406,21,30);
+    </p>
+      <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(423,10406,28,42);
+      </p>
+      <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(424,10406,36,5);
+      </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(425,10406,40,2);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(426,10407,11,30);
+   </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(427,10407,69,15);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(428,10407,71,15);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(429,10408,37,10);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(430,10408,54,6);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(431,10408,62,35);
+   </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(432,10409,14,12);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(433,10409,21,12);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(434,10410,33,49);
+</p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(435,10410,59,16);
+  </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(436,10411,41,25);
+ </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(437,10411,44,40);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(438,10411,59,9);
+   </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES            </span>(439,10412,14,20);
+   </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(440,10413,1,24);
+ </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(441,10413,62,40);
+ </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(442,10413,76,14);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(443,10414,19,18);
+</p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(444,10414,33,50);
+     </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(445,10415,17,2);
+</p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(446,10415,33,20);
+ </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(447,10416,19,20);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(448,10416,53,10);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(449,10416,57,20);
+</p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(450,10417,38,50);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(451,10417,46,2);
+</p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(452,10417,68,36);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(453,10417,77,35);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(454,10418,2,60);
+   </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(455,10418,47,55);
+   </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(456,10418,61,16);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(457,10418,74,15);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(458,10419,60,60);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(459,10419,69,20);
+   </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(460,10420,9,20);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(461,10420,13,2);
+</p>
+    <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(462,10420,70,8);
+    </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(463,10420,73,20);
+   </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(464,10421,19,4);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(465,10421,26,30);
+   </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(466,10421,53,15);
+   </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(467,10421,77,10);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(468,10422,26,2);
+</p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(469,10423,31,14);
+ </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(470,10423,59,20);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(471,10424,35,60);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(472,10424,38,49);
+   </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(473,10424,68,30);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(474,10425,55,10);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(475,10425,76,20);
+   </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(476,10426,56,5);
+  </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(477,10426,64,7);
+ </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(478,10427,14,35);
+   </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(479,10428,46,20);
+     </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(480,10429,50,40);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(481,10429,63,35);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(482,10430,17,45);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(483,10430,21,50);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(484,10430,56,30);
+   </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(485,10430,59,70);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(486,10431,17,50);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(487,10431,40,50);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(488,10431,47,30);
+</p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(489,10432,26,10);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(490,10432,54,40);
+</p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(491,10433,56,28);
+  </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(492,10431,17,50);
+  </p>
+     <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(493,10430,59,70);
+     </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(494,10430,2,10);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(495,10420,22,12);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(496,10426,72,10);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(497,10426,46,5);
+   </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(498,10427,56,40);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(499,10428,64,30);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(500,10429,75,24);
+</p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(501,10430,53,15);
+   </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(502,10431,19,15);
+  </p>
+    <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(503,10432,34,20);
+    </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(504,10433,57,15);
+   </p>
+   <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(505,10421,12,15);
+   </p>
+    <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(506,10420,16,16);
+    </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(507,10421,64,6);
+ </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(508,10422,74,30);
+ </p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(509,10423,2,45);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(510,10424,16,49);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(511,10424,29,24);
+</p>
+ <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(512,10425,61,90);
+ </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(513,10428,27,50);
+</p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(514,10414,11,30);
+</p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(515,10410,54,80);
+  </p>
+<p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(516,10420,66,60);
+</p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(517,10408,11,6);
+  </p>
+  <p>
+            <span class="create">INSERT INTO</span> <span class="nombres">`base_prueba`.`detalle de orden`</span> <span
+                class="create">VALUES
+            </span>(518,10409,28,12);
+  </p>
 
 
     </div>
