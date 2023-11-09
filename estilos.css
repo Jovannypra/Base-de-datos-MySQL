@@ -27,10 +27,34 @@
 
 p {
     color: orange;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .tabla {
     margin-top: 40px;
     margin-bottom: 40px;
 
+}
+
+.estilo_P{
+    font-size: 18px;
+}
+
+.boton{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#miDiv{
+    display: none;
+}
+.boton_p{
+    font-size: 25px;
+}
+.boton_p_2{
+    color: black;
+}
+a{
+    text-decoration: none;
 }
